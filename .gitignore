@@ -1,0 +1,5 @@
+*.pyc
+*.sw?
+*.*~
+*.bak
+doc/tags
