@@ -375,7 +375,7 @@ class Runner:
         self.close_connection()
         self.ui.close()
         self.keymapper.unmap()
-        self.kill()
+        # self.kill()
 
     def kill(self):
         import os
