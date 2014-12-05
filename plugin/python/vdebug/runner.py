@@ -103,7 +103,7 @@ class Runner:
             if str(status) == "interactive":
                 self.ui.error("Debugger engine says it is in interactive mode,"+\
                         "which is not supported: closing connection")
-                self.close_connection()
+                # self.close_connection()
             elif str(status) in ("stopping","stopped"):
                 self.ui.statuswin.set_status("stopped")
                 self.ui.say("Debugging session has ended")
@@ -375,7 +375,7 @@ class Runner:
         self.close_connection()
         self.ui.close()
         self.keymapper.unmap()
-        self.kill()
+        # self.kill()
 
     def kill(self):
         import os
